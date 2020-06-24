@@ -1,0 +1,58 @@
+<?php 
+@system("clear");
+date_default_timezone_set('Asia/Manila');
+$b="\033[1;35m";
+$red="\033[1;31m";
+$blue="\033[1;32m";
+$puti="\033[1;37m";
+print "
+[35m---------------------------[32m
+$b| DAMANG-TOOLS:[31mPHILIPPINES$b |
+[35m---------------------------[32m
+AUTHOR    :[34mBurmes Black Dragon Worrier
+[32m
+Facebook   :[34mPhone Pyae Phyoe Paing
+[32m
+WARNING   :[34mNOT FOR SALE[32m
+[32m
+DESCLAIMER:[31mUSE AT YOUR OWN RISK[32m
+[32m
+";
+
+echo $pink."Login";
+$ar=0;$is=5;while($ar<$is){
+sleep(1);
+$ar++;
+echo ".";
+}
+sleep(1);
+echo $green."success"."\n\n";
+
+while (true){
+$log = "hack";
+$data = "4G";
+$curl = curl_init();
+curl_setopt_array($curl, array(
+   CURLOPT_PORT => "8.8.8.8",
+  CURLOPT_URL => "$log",
+  CURLOPT_RETURNTRANSFER => true,
+  CURLOPT_ENCODING => "",
+  CURLOPT_SSL_VERIFYPEER => false,
+  CURLOPT_TIMEOUT => 30,
+  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+  CURLOPT_CUSTOMREQUEST => "B.B.D.W",
+  CURLOPT_POSTFIELDS => $data,
+  CURLOPT_HTTPHEADER => array("B.B.D.W","B.B.D.W","B.B.D.W"
+      
+    )
+));
+
+$damang = curl_exec($curl);
+$err = curl_error($curl);
+curl_close($curl);
+$js = json_decode($damang,true);
+$xu=$js["B.B.D.W"]["B.B.D.W"]["B.B.D.W"];
+echo "$green balance:$b"."$xu"."\n";
+
+sleep(0);
+}
